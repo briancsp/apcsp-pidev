@@ -29,35 +29,63 @@ int main()
   {
     printf("a is greater than b\n");
   }
+  else
+  {
+    printf("a is not greater than b\n");
+  }
 
   if (c >= b)
   {
-    printf("c is greater than or equal to b");
+    printf("c is greater than or equal to b\n");
+  }
+  else
+  {
+    printf("c is not greater than or equal to b\n");
   }
 
   if (a < c)
   {
     printf("a is less than c\n");
   }
+  else
+  {
+    printf("a is not less than c\n");
+  }
 
   if (b <= c)
   {
     printf("b is less than or equal to c\n");
+  }
+  else
+  {
+    printf("b is not less than or equal to c\n");
   }
 
   if (a == 0 && b == 2)
   {
     printf("a is 0 and b is 2\n");
   }
+  else
+  {
+    printf("it is not true that a is 0 and b is 2\n");
+  }
 
-  if (a == 1 || b >=c)
+  if (a == 1 || b >= c)
   {
     printf("a is 1 or b is greater than or equal to c\n");
+  }
+  else
+  {
+    printf("it is not true that a is 1 or b is greater than or equal to c\n");
   }
 
   if (!(a == b))
   {
     printf("a is not equal to b\n");
+  }
+  else
+  {
+    printf("a is not not equal to b :)\n");
   }
 
 }
