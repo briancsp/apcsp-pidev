@@ -10,11 +10,11 @@ int main()
   long double f = 3.00001;
 
   // print value and size of an int variable
-  printf("int a value: %d and size: %d bytes\n", a, sizeof(a));
-  printf("float b value: %f and size: %d bytes\n",b, sizeof(b));
-  printf("double c value: %f and size: %d bytes\n",c, sizeof(c));
-  printf("char d value: %c and size: %d bytes\n",d, sizeof(d));
-  printf("unsigned int e value: %d and size: %d bytes\n",e, sizeof(e));
-  printf("long double f value: %f and size: %d bytes\n",f, sizeof(f));
+  printf("int a value: %d, and size: %d bytes\n", a, sizeof(a));
+  printf("float b value: %f, and size: %d bytes\n",b, sizeof(b));
+  printf("double c value: %f, and size: %d bytes\n",c, sizeof(c));
+  printf("char d value: %c, and size: %d bytes\n",d, sizeof(d));
+  printf("unsigned int e value: %d, and size: %d bytes\n",e, sizeof(e));
+  printf("long double f value: %f, and size: %d bytes\n",f, sizeof(f));
 }
 

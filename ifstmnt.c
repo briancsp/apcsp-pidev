@@ -5,6 +5,7 @@ int main()
   int a = 0;
   int b = 2;
   int c = 2;
+  printf("a=%d, b=%d, c=%d\n",a,b,c);
 
   // if statement to test is a is equal to 0
   if (a == 0)
