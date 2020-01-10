@@ -13,8 +13,29 @@ int main(int argc, char* argv[]) {
   float min=0;
   float max=0;
 
-  sscanf(argv[1], "%f", &min);
-  sscanf(argv[2], "%f", &max);
+  char input[256];
+
+  if(argc==3) {
+    sscanf(argv[1], "%f", &min);
+    sscanf(argv[2], "%f", &max);
+    }
+
+  else {
+    printf("Bounds not found. Please insert bounds.\nLower bound: \n");
+    while (1)
+    {
+      fgets(input, 256, stdin);
+      if (sscanf(input, "%f", &min) == 1) break;
+      printf("Insert a NUMBER\n");
+    }
+    printf("Upper bound: \n");
+    while (1)
+    {
+      fgets(input, 256, stdin);
+      if (sscanf(input, "%f", &max) == 1) break;
+      printf("Insert a NUMBER\n");
+    }
+  }
 
   if (min>max) {
   int temp = 0;
