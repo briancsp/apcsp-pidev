@@ -28,6 +28,8 @@ int main()
   int total=5;
   int count = 0;
 
+  printf("Input information for up to 5 students\n");
+
   for(int i = 0; i < total; i++) {
     count++;
     printf("Enter student name:\n");
