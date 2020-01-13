@@ -2,7 +2,7 @@
 
 int main()
 {
-  
+
   int a;
   int* ptrtoa;
 
@@ -21,8 +21,17 @@ int main()
 
   float d = 2.5;
   float e = 3.5;
-  printf("d=%f and its address is %d.\ne=%f and its address is %d.\n",d,&d,e,&e);
-  int* dpointer = &d;
-  int* epointer = &e;
-  float temp = *dpointer;
+  float temp;
+
+  printf("\nd=%f and its address is %d.\ne=%f and its address is %d.\n",d,&d,e,&e);
+
+  float* dpointer = &d;
+  float* epointer = &e;
+
+  temp = *epointer;
+  *epointer = *dpointer;
+  *dpointer = temp;
+
+  printf("d is now %f and e is now %f\n",d,e);
+
 }
